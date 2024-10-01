@@ -1,0 +1,4 @@
+django
+django-ckeditor-5
+midtransclient
+pillow
