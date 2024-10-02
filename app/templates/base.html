@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/tailwindcss">
+            @layer utilities {
+              .content-auto {
+                content-visibility: auto;
+              }
+            }
+        </style>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                  }
+                }
+              }
+            }
+        </script>
+    </head>
+    <body>
+        {% block navbar %}{% endblock %}
+        {% block content %}{% endblock %}
+    </body>
+</html>
